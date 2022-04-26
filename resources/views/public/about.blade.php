@@ -1,0 +1,76 @@
+@extends('public/template/default')
+
+@section('title')
+Tendance Digital
+@endsection
+
+
+@section('content')
+<!-- HEADER -->
+<section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about" style="margin-top: -100px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
+                <div class="about-text">
+                    <!--<small class="small-text">Welcome to <span class="mobile-block">my portfolio website!</span></small>-->
+                    <h1 class="animated animated-text">
+                        <span class="mr-6" style="font-size: 30px; margin-top: -100px;">Tentang</span>
+                        <div class="animated-info">
+                            <span style="color: #FFC200;">Tendance Digital</span>
+                            <!--<span class="animated-item">Service Website & Mobile APP</span>
+                             <span class="animated-item">Course</span>-->
+                        </div>
+                    </h1>
+                    <p>Sebuah Start Up karya anak bangsa yang menekuni di bidang Software House & Academy untuk memajukan dunia digital.</p>
+                    <div class=" mt-2">
+                        <!--<a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-12">
+                <div class="about-image svg">
+                    <img src="public/images/about.png" class="img-fluid" alt="svg image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END -->
+
+<!-- VISI & MISI -->
+<div class="wrapper coloured" id="About">
+    <section id="testimonials" class="hoc container clear">
+        <div class="section-title text-center">
+            <h2>VISI & MISI</h2>
+
+        </div>
+        <article class="one_half first">
+            <figure class="clear"><img style="width: 100px; height: 100px" src="public/about/images/demo/VISI.png" alt="">
+                <figcaption>
+                    <!--  <h6 class="heading">VISI</h6> -->
+                    <!-- <em>Adipiscing fusce eu velit</em></figcaption> -->
+            </figure>
+            <blockquote>Membentuk jiwa-jiwa bertalenta yang akan terus bercahaya menyinari diri untuk membangun negeri yang maju di dunia digital.</blockquote>
+        </article>
+        <article class="one_half">
+            <figure class="clear"><img style="width: 100px; height: 100px;" src="public/about/images/demo/MISI.png" alt="">
+                <figcaption>
+                    <!-- <h6 class="heading">MISI</h6> -->
+                    <!-- <em>Mauris erat aliquam leo</em></figcaption> -->
+            </figure>
+            <blockquote>Membangun diri dengan jiwa yang bertalenta untuk lebih maju yang selalu berjalan beriringan bersama Tendance Digital.</blockquote>
+        </article>
+    </section>
+</div>
+<!-- END -->
+
+
+
+
+
+
+
+
+
+
+@endsection
