@@ -15,8 +15,8 @@
                     Program Tendance
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="text-align: center;">
-                    <li><a class="dropdown-item" href="#">Tendance Academy</a></li>
-                    <li><a class="dropdown-item" href="#">Tendance Service</a></li>
+                    <li><a class="dropdown-item" href="{{ url('/academy') }}">Tendance Academy</a></li>
+                    <li><a class="dropdown-item" href="{{ url('/service') }}">Tendance Service</a></li>
                 </ul>
 
                 <!--<li class="nav-item">
@@ -26,13 +26,13 @@
                     <a href="#project" class="nav-link"><span data-hover="Tendance Service">Tendance Service</span></a>
                 </li>-->
                 <li class="nav-item">
-                    <a href="{{ url('/karir') }}#karir" class="nav-link"><span data-hover="Tendance Career">Tendance Career</span></a>
+                    <a href="#" class="nav-link"><span data-hover="Tendance Career" onclick="Swal.fire('Mohon Maaf Untuk Saat Ini Belum Ada Lowongan Pekerjaan', 'Silahkan Tunggu,dan apply di kami', 'warning')  ">Tendance Career</span></a>
                 </li>
+                <!--<li class="nav-item">
+                    <a href="{{ url('/blog') }}" class="nav-link"><span data-hover="Blog">Blog</span></a>
+                </li>-->
                 <li class="nav-item">
-                    <a href="#resume" class="nav-link"><span data-hover="Blog">Blog</span></a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{ url('/about') }}#about" class="nav-link"><span data-hover="Tentang Tendance">Tentang Tendance</span></a>
+                    <a href="{{ url('/about') }}" class="nav-link"><span data-hover="Tentang Tendance">Tentang Tendance</span></a>
                 </li>
                 <li class="nav-item">
                     <button type="button" class="btn btn-outline-warning">Daftar/Login</button>

@@ -1,5 +1,11 @@
+<div style="position:fixed;right:20px;bottom:20px;">
+    <a href="https://api.whatsapp.com/send?phone=+6281391140713&text=Halo%20TENDANCE%20DIGITAL,%20mau%20tanya-tanya%20Program%20Tendance%20Digital%20Dong.">
+        <button style="background:#32C03C;vertical-align:center;height:36px;border-radius:5px">
+            <img src="https://web.whatsapp.com/img/favicon/1x/favicon.png"> Hubungi Kami</button></a>
+</div>
+
 <!-- FOOTER -->
-<footer class="footer" style="background-color: #e7e7e7; ">
+<footer class="footer" style="background-color: #e7e7e7; margin-top:100px;">
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-lg-4" style="margin-top: 100px;">
@@ -9,45 +15,43 @@
             </div>
             <div class="col-sm-6 col-md-3 col-lg-2" style="margin-top: 50px;">
                 <div class="list-menu">
-                    <h4>Abou Us</h4>
+                    <h4>Tendance Academy</h4>
                     <ul class="list-unstyled">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Features item</a></li>
-                        <li><a href="#">Live streaming</a></li>
+                        <li><a href="#">Mentoring Bimbel</a></li>
+                        <li><a href="#">Wesite Development</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Business Analysis</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2" style="margin-top: 50px;">
+                <div class="list-menu">
+                    <h4>Tendance Service</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Website Development</a></li>
+                        <li><a href="#">Mobile Development</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-2" style="margin-top: 50px;">
+                <div class="list-menu">
+                    <h4>Tendance Career</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Apprenticeship</a></li>
+                        <li><a href="#">Job vacancy</a></li>
+                        <li><a href="#">Job Conect</a></li>
                         <li><a href="#">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-2" style="margin-top: 50px;">
                 <div class="list-menu">
-                    <h4>Abou Us</h4>
+                    <h4>Tentang Tendance</h4>
                     <ul class="list-unstyled">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Features item</a></li>
-                        <li><a href="#">Live streaming</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-2" style="margin-top: 50px;">
-                <div class="list-menu">
-                    <h4>Support</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#">faq</a></li>
-                        <li><a href="#">Editor help</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-3 col-lg-2" style="margin-top: 50px;">
-                <div class="list-menu">
-                    <h4>Abou Us</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Features item</a></li>
-                        <li><a href="#">Live streaming</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Kebijakan & Ketentuan</a></li>
                     </ul>
                 </div>
             </div>
@@ -56,9 +60,15 @@
     <tr>
         <div class="copyrights" style="margin-top: 50px;">
             <div class="container">
-                <p>&copy; Copyrights eStartup. All rights reserved.</p>
                 <div class="credits">
-                    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                    <p>&copy; Copyrights
+                        <script type='text/javascript'>
+                            var creditsyear = new Date();
+                            document.write(creditsyear.getFullYear());
+                        </script> Tendance Digital. All rights reserved.
+                    </p>
+                    Designed by <a href="https://instagram/tendance_digital/">Tendance Digital </a>Software House ||
+                    Academy Digital
                 </div>
             </div>
         </div>
@@ -108,3 +118,30 @@
     }, 1000);
 </script>
 <!-- END -->
+
+<!-- SWEET ALERT -->
+<script src="public/sweetalert/sweetalert2.all.min.js"></script>
+<!-- END -->
+
+{{-- PARTNER --}}
+<script src="public/service/vendors/aos/js/aos.js"></script>
+<script src="public/service/vendors/jquery-flipster/js/jquery.flipster.min.js"></script>
+<script src="public/service/js/template.js"></script>
+{{-- END --}}
+<script>
+    document.querySelector(".fourth").addEventListener("click", function() {
+        swal({
+            title: "Alert Set on Timer",
+            text: "This alert will disappear after 3 seconds.",
+            position: "bottom",
+            backdrop: "linear-gradient(yellow, orange)",
+            background: "white",
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            allowEnterKey: false,
+            showConfirmButton: false,
+            showCancelButton: false,
+            timer: 3000
+        });
+    });
+</script>

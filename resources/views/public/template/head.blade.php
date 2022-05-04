@@ -4,6 +4,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <title> @yield('title')</title>
+    <link rel="shortcut icon" href="public/images/icon.png" />
     <link rel="stylesheet" href="public/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/css/unicons.css">
     <link rel="stylesheet" href="public/css/owl.carousel.min.css">
@@ -56,6 +57,7 @@
             color: #71c55d;
         }
     </style>
+    <link href="public/layanankami/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
     <!-- END -->
 
     <!-- PRICING -->
@@ -136,5 +138,75 @@
     </style>
     <!-- END -->
 
+    <!-- AVATAR ABOUT -->
+    <style>
+        .avatar {
+            vertical-align: middle;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+    </style>
+    <!-- END -->
 
+    {{-- PARTNER --}}
+    <link rel="stylesheet" href="public/service/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="public/service/vendors/owl.carousel/css/owl.carousel.css">
+    <link rel="stylesheet" href="public/service/vendors/owl.carousel/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="public/service/vendors/aos/css/aos.css">
+    <link rel="stylesheet" href="public/service/vendors/jquery-flipster/css/jquery.flipster.css">
+    {{-- <link rel="stylesheet" href="public/service/css/style.css"> --}}
+    {{-- END --}}
+
+    {{-- GALERY --}}
+    <style>
+        div.gallery {
+            border: 2px solid rgb(51, 31, 167);
+        }
+
+        div.gallery:hover {
+            border: 1px solid rgb(206, 169, 23);
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            .responsive {
+                width: 49.99999%;
+                margin: 6px 0;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+    {{-- END --}}
 </head>

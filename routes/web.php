@@ -22,3 +22,12 @@ Route::get('/karir', function () {
 Route::get('/about', function () {
     return view('public/about');
 });
+Route::get('/blog', function () {
+    return view('public/blog');
+});
+Route::get('/academy', function () {
+    return view('public/academy');
+});
+Route::get('/service', function () {
+    return view('public/service');
+});

@@ -1,13 +1,13 @@
 @extends('public/template/default')
 
 @section('title')
-Tendance Digital
+Tendance Digital || ABOUT
 @endsection
 
 
 @section('content')
 <!-- HEADER -->
-<section class="about full-screen d-lg-flex justify-content-center align-items-center" id="about" style="margin-top: -100px;">
+<section class="about full-screen d-lg-flex justify-content-center align-items-center" style="margin-top: -100px;">
     <div class="container">
         <div class="row">
             <div class="col-lg-7 col-md-12 col-12 d-flex align-items-center">
@@ -64,7 +64,50 @@ Tendance Digital
 </div>
 <!-- END -->
 
-
+<div class="bgded overlay light" id="Team">
+    <section id="services" class="hoc container clear padd-section text-center" style="margin-top: 80px;">
+        <div class=" container">
+            <div class="section-title text-center">
+                <h2>Team</h2>
+                <p class="separator">Tendance Digital memiliki team yang profesional di bidanganya, sehingga dapat mendirikan sebuah start up software house hingga saat ini.</p>
+            </div>
+        </div>
+        <ul class="nospace group elements elements-three">
+            <li class="one_third">
+                <article><a href="#"><i class="fas fa-hourglass-half"></i></a>
+                    <h6 class="heading">Eko Muhammad Rilo</h6>
+                    <p style="color: #FFC200;">CEO</p>
+                </article>
+            </li>
+            <li class="one_third">
+                <article>
+                    <img style="height: 200px; width: 200px;" src="public/about/images/team/berto.png" alt="avatar" class="avatar">
+                    <h6 class="heading">Berto Juni Krisnanto</h6>
+                    <p style="color: #FFC200;">Co-Founder & CTO</p>
+                </article>
+            </li>
+            <li class="one_third">
+                <article><a href="#"><i class="fas fa-sliders-h"></i></a>
+                    <h6 class="heading">Nurul Rossa</h6>
+                    <p style="color: #FFC200;">COO</p>
+                </article>
+            </li>
+            <li class="one_third">
+                <article><a href="#"><i class="fas fa-tty"></i></a>
+                    <h6 class="heading">Rona Leonsa</h6>
+                    <p style="color: #FFC200;">CFO</p>
+                </article>
+            </li>
+            <li class="one_third">
+                <article>
+                    <img style="height: 200px; width: 200px;" src="public/about/images/team/noni.jpg" alt="avatar" class="avatar">
+                    <h6 class="heading">Inosensia Prisilia</h6>
+                    <p style="color: #FFC200;">CMO</p>
+                </article>
+            </li>
+        </ul>
+    </section>
+</div>
 
 
 
