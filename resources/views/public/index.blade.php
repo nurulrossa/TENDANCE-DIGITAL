@@ -62,12 +62,13 @@
      </div>
      <div class="container">
          <div class="row">
+            @foreach ($academy as $ac)
              <div class="col-md-6 col-lg-3">
                  <div class="block-pricing">
                      <div class="table">
-                         <h4>Mentoring Bimbel</h4>
-                         <h4 style="color: #FFC200; margin-top:-30px;"><s>Rp.50.000-,</s></h4>
-                         <h2 style="margin-top:-30px;">Rp.10.000-,</h2>
+                         <h4>{{ $ac->nama }}</h4>
+                         <h4 style="color: #FFC200; margin-top:-30px;"><s><?php $potongan = ($ac->diskon / 100) * $ac->harga; echo 'Rp '.number_format($potongan ,0,',','.'); ?></s></h4>
+                         <h2 style="margin-top:-30px;"><?php echo 'Rp '.number_format($ac->harga - $potongan ,0,',','.'); ?></h2>
                          <ul class="list-unstyled">
                              <li><b>1 X</b> Pertemuan</li>
                              <li>Mentor Profesional</li>
@@ -75,13 +76,15 @@
                              <li>Diskusi bersama praktisi</li>
                          </ul>
                          <div class="table_btn" style="margin-top: 20px;">
-                             <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false"><b>Pesan</b></button>
+                             <button type="button" id="tombol" class="btn btn-warning" onclick="addModal({{ $ac->nama }})"><b>Pesan</b></button>
+                             <!-- <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-toggle="modal" data-target="#myModal<?= $ac->id ?>" data-backdrop="static" data-keyboard="false"><b>Pesan</b></button> -->
                              <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal" data-toggle="modal" data-target="#exampleModal"><b>Detail</b></button>
                          </div>
                      </div>
                  </div>
              </div>
-             <div class="col-md-6 col-lg-3">
+            @endforeach
+             <!-- <div class="col-md-6 col-lg-3">
                  <div class="block-pricing">
                      <div class="table">
                          <h4>Dasar Website Development</h4>
@@ -137,7 +140,7 @@
                          </div>
                      </div>
                  </div>
-             </div>
+             </div> -->
          </div>
      </div>
  </section>
@@ -482,4 +485,14 @@
      </div>
  </div>
  <!-- END -->
+    <script>
+        function addModal(id) {
+            console.log(id);
+            $('#myModal').modal('show');
+            // $('#academy').val(nama);
+            
+            // document.getElementById('modal-delete-form').setAttribute('action', 'partai/delete/' + id);
+        }
+    </script>
  @endsection
+ 

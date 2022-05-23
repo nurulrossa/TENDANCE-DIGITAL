@@ -16,12 +16,12 @@ Tendance Digital || ABOUT
                     <h1 class="animated animated-text">
                         <span class="mr-6" style="font-size: 30px; margin-top: -100px;">Tentang</span>
                         <div class="animated-info">
-                            <span style="color: #FFC200;">Tendance Digital</span>
+                            <span style="color: #FFC200;">{{ $profil->nama }}</span>
                             <!--<span class="animated-item">Service Website & Mobile APP</span>
                              <span class="animated-item">Course</span>-->
                         </div>
                     </h1>
-                    <p>Sebuah Start Up karya anak bangsa yang menekuni di bidang Software House & Academy untuk memajukan dunia digital.</p>
+                    <p>{{ $profil->tentang }}</p>
                     <div class=" mt-2">
                         <!--<a href="#" class="btn mr-lg-2 custom-btn"><i class='uil uil-file-alt'></i> Download Resume</a>-->
                     </div>
@@ -50,7 +50,7 @@ Tendance Digital || ABOUT
                     <!--  <h6 class="heading">VISI</h6> -->
                     <!-- <em>Adipiscing fusce eu velit</em></figcaption> -->
             </figure>
-            <blockquote>Membentuk jiwa-jiwa bertalenta yang akan terus bercahaya menyinari diri untuk membangun negeri yang maju di dunia digital.</blockquote>
+            <blockquote>{{ $profil->visi }}</blockquote>
         </article>
         <article class="one_half">
             <figure class="clear"><img style="width: 100px; height: 100px;" src="public/about/images/demo/MISI.png" alt="">
@@ -58,7 +58,7 @@ Tendance Digital || ABOUT
                     <!-- <h6 class="heading">MISI</h6> -->
                     <!-- <em>Mauris erat aliquam leo</em></figcaption> -->
             </figure>
-            <blockquote>Membangun diri dengan jiwa yang bertalenta untuk lebih maju yang selalu berjalan beriringan bersama Tendance Digital.</blockquote>
+            <blockquote>{{ $profil->misi }}</blockquote>
         </article>
     </section>
 </div>

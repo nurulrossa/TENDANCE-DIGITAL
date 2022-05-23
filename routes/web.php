@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\ProfilControllers;
+use App\Http\Controllers\AcademyControllers;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,21 +16,27 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('public/index');
-});
+Route::get('/', [AcademyControllers::class, 'index']);
+Route::post('getHarga/{id}', [AcademyController::class, 'getHarga']);
+// Route::get('/', function () {
+//     return view('public/index');
+// });
 Route::get('/karir', function () {
     return view('public/karir');
 });
-Route::get('/about', function () {
-    return view('public/about');
-});
+// Route::get('/about', function () {
+//     return view('public/about');
+// });
+
+Route::get('/about', [ProfilControllers::class, 'index']);
+
 Route::get('/blog', function () {
     return view('public/blog');
 });
 Route::get('/academy', function () {
     return view('public/academy');
 });
+
 Route::get('/service', function () {
     return view('public/service');
 });
